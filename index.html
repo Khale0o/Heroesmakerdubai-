@@ -195,16 +195,22 @@
       }
 
       /* Hero section */
-      .hero {
-        text-align: center;
-        padding: 6rem 1rem 7rem;
-        background: linear-gradient(
-            rgba(0, 121, 107, 0.65),
-            rgba(0, 121, 107, 0.65)
-          ),
-          url("WhatsApp Image 2025-07-22 at 3.04.29 AM.jpeg") center/cover no-repeat;
-        color: var(--clr-white);
-      }
+.hero {
+  text-align: center;
+  padding: 6rem 1rem 7rem;
+  background: 
+    linear-gradient(
+      rgba(0, 121, 107, 0.65),
+      rgba(0, 121, 107, 0.65)
+    ),
+    url("../images/WhatsApp Image 2025-07-22 at 3.04.29 AM.jpeg") center/cover no-repeat;
+  color: var(--clr-white);
+  min-height: 400px; /* Ensures hero section has minimum height */
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  position: relative;
+}
 
       .hero h1 {
         font-size: var(--fs-hero-title);
